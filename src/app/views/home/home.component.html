@@ -1,0 +1,136 @@
+<body>
+  <section>
+    <div>
+      <h1>Equipe</h1>
+    </div>
+    <div class="container-equipe">
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://images.pexels.com/photos/3153207/pexels-photo-3153207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <div style="text-align: center">
+            <button (click)="navegacao()" type="button" class="btn btn-info">
+              Detalhes
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://images.pexels.com/photos/8145352/pexels-photo-8145352.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <div style="text-align: center">
+            <button (click)="navegacao()" type="button" class="btn btn-info">Detalhes</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://images.pexels.com/photos/8145352/pexels-photo-8145352.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <div style="text-align: center">
+            <button (click)="navegacao()" type="button" class="btn btn-info">Detalhes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <!--DEPOIMENTOS-->
+    <div id="depoimentos" class="block">
+      <div class="container">
+        <h2 class="title text-center">Depoimentos</h2>
+        <h4 class="subtitle text-center mb-4">
+          Empresas e Pessoas que utilizaram nossos serviços
+        </h4>
+        <owl-carousel-o [options]="customOptions">
+          <ng-template carouselSlide
+            ><div>
+              <div class="depoimento">
+                <div><img class="img-profile" src="/assets/user.png" /></div>
+                <div class="depoimento-texto pl-3">
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium dolorem que laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis.
+                  </p>
+                  <p class="name">
+                    <span>Maikel Neris</span> / Diretor da Decode Web
+                  </p>
+                </div>
+                <div class="content-aspas">
+                  <img class="img-aspas" src="/assets/aspas.png" />
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template carouselSlide
+            ><div>
+              <div class="depoimento">
+                <div><img class="img-profile" src="/assets/user.png" /></div>
+                <div class="depoimento-texto pl-3">
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium dolorem que laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis.
+                  </p>
+                  <p class="name">
+                    <span>Maikel Neris</span> / Diretor da Decode Web
+                  </p>
+                </div>
+                <div class="content-aspas">
+                  <img class="img-aspas" src="/assets/aspas.png" />
+                </div>
+              </div>
+            </div>
+            </ng-template
+          >
+          <ng-template carouselSlide
+            ><div>
+              <div class="depoimento">
+                <div><img class="img-profile" src="/assets/user.png" /></div>
+                <div class="depoimento-texto pl-3">
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium dolorem que laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis.
+                  </p>
+                  <p class="name">
+                    <span>Maikel Neris</span> / Diretor da Decode Web
+                  </p>
+                </div>
+                <div class="content-aspas">
+                  <img class="img-aspas" src="/assets/aspas.png" />
+                </div>
+              </div>
+            </div>
+            </ng-template
+          >
+        </owl-carousel-o>
+      </div>
+
+    </div>
+    <!-- Fim DEPOIMENTOS-->
+  </section>
+</body>

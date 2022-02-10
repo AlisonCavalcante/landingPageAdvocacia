@@ -1,0 +1,49 @@
+.container-equipe {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: sans-serif;
+}
+.card {
+  margin: 10px auto;
+  border: 1px solid grey;
+}
+/* .card-body > button {
+  text-align: center;
+} */
+.card > img {
+  height: 200px;
+}
+
+#depoimentos .depoimento {
+  background-color: #D3D3D3;
+  display: flex;
+  margin-bottom: 80px;
+  border-radius: 10px;
+  text-align: center;
+}
+#depoimentos .depoimento-texto {
+  display: flex;
+  flex-direction: column;
+ margin: 20px;
+ justify-content: center;
+ text-align: center;
+ align-items: center;
+}
+.img-profile{
+  height: 200px;
+  margin: 20px;
+}
+
+.content-aspas{
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.img-aspas{
+  height: 100px;
+}

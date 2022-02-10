@@ -1,0 +1,18 @@
+.collapse{
+  display: flex;
+  justify-content: flex-end;
+
+}
+.img-logo{
+  height: 50px;
+}
+p{
+  margin-bottom: 0;
+  margin-left: 50px;
+}
+li{
+  margin-left: 60px;
+}
+li > a:hover{
+  transform: scale(1.2);
+}
