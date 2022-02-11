@@ -10,6 +10,8 @@ import { HomeComponent } from './views/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { PageDetalhesComponent } from './views/page-detalhes/page-detalhes.component';
+import { AreasPageComponent } from './views/areas-page/areas-page.component';
+import { SobrePageComponent } from './views/sobre-page/sobre-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { PageDetalhesComponent } from './views/page-detalhes/page-detalhes.compo
     NavBarComponent,
     HomeComponent,
     FooterComponent,
-    PageDetalhesComponent
+    PageDetalhesComponent,
+    AreasPageComponent,
+    SobrePageComponent
   ],
   imports: [
     BrowserModule,
