@@ -1,5 +1,39 @@
 <body>
   <section>
+    <body>
+      <section>
+        <div class="container">
+          <div class="institucional">
+            <div style="margin: 10px"><h2>Institucional</h2></div>
+            <div style="margin: 10px" class="descricao-institucional">
+              <p>Atuamos em todos os ramos do Direito Público.</p>
+              <p>
+                Nossa equipe de Direito Público e Regulatório assessora empresas
+                nacionais e internacionais nos mais variados setores de
+                indústria, incluindo os setores de produtos químicos, energia,
+                alimentos e farmacêuticos, entre outros. Temos vasta experiência
+                em litígios perante todos os tribunais administrativos do
+                Brasil.
+              </p>
+              <p>
+                Nossos profissionais têm um profundo conhecimento e
+                especialização em diversas matérias do Direito Público e
+                Regulatório, tais como regulamentos e decisões, legislação
+                econômica e financiamento de projetos infraestrutura, leis
+                orçamentárias, finanças públicas e garantias governamentais e
+                questões contenciosas envolvendo Direito Público em geral.
+              </p>
+              <p>
+                Atuamos, ainda, em procedimentos administrativos complexos,
+                zoneamento e legislação ambiental, bem como contratos públicos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </body>
+  </section>
+  <section>
     <div>
       <h1>Equipe</h1>
     </div>
@@ -17,7 +51,7 @@
           </p>
           <div style="text-align: center">
             <button (click)="navegacao()" type="button" class="btn btn-info">
-              Detalhes
+              Saiba Mais
             </button>
           </div>
         </div>
@@ -34,7 +68,9 @@
             bulk of the card's content.
           </p>
           <div style="text-align: center">
-            <button (click)="navegacao()" type="button" class="btn btn-info">Detalhes</button>
+            <button (click)="navegacao()" type="button" class="btn btn-info">
+              Saiba Mais
+            </button>
           </div>
         </div>
       </div>
@@ -50,12 +86,59 @@
             bulk of the card's content.
           </p>
           <div style="text-align: center">
-            <button (click)="navegacao()" type="button" class="btn btn-info">Detalhes</button>
+            <button (click)="navegacao()" type="button" class="btn btn-info">
+              Saiba Mais
+            </button>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!--Fim Equipe-->
+  <!--Nossos Serviços-->
+  <section style="margin-top: 30px;">
+    <div>
+      <h1>Nossos Serviços</h1>
+    </div>
+    <div class="container-areas">
+      <div class="card" style="width: 18rem">
+        <img
+          style="margin: 10px"
+          src="/assets/grupo-de-pessoas.png"
+          alt="..."
+        />
+        <h4>Direito do Trabalho</h4>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img style="margin: 10px" src="/assets/martelo.png" alt="..." />
+        <h4>Direito do Civil</h4>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          style="margin: 10px"
+          src="/assets/balanca-de-justica.png"
+          alt="..."
+        />
+        <h4>Penal</h4>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img style="margin: 10px" src="/assets/contrato.png" alt="..." />
+        <h4>Contratos</h4>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img style="margin: 10px" src="/assets/ecologia.png" alt="..." />
+        <h4>Ambiental</h4>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img style="margin: 10px" src="/assets/chaves.png" alt="..." />
+        <h4>Locação</h4>
+      </div>
+    </div>
+    <div style="text-align: center;">
+      <button  type="button" class="btn btn-info"><a style="text-decoration: none; color: white;" routerLink="/areasPage">Veja Mais</a></button>
+    </div>
+  </section>
+  <!--Fim Nossos Serviços-->
   <section>
     <!--DEPOIMENTOS-->
     <div id="depoimentos" class="block">
@@ -104,8 +187,7 @@
                 </div>
               </div>
             </div>
-            </ng-template
-          >
+          </ng-template>
           <ng-template carouselSlide
             ><div>
               <div class="depoimento">
@@ -125,11 +207,9 @@
                 </div>
               </div>
             </div>
-            </ng-template
-          >
+          </ng-template>
         </owl-carousel-o>
       </div>
-
     </div>
     <!-- Fim DEPOIMENTOS-->
   </section>
