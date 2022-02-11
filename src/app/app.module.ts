@@ -12,6 +12,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { PageDetalhesComponent } from './views/page-detalhes/page-detalhes.component';
 import { AreasPageComponent } from './views/areas-page/areas-page.component';
 import { SobrePageComponent } from './views/sobre-page/sobre-page.component';
+import { ContatoPageComponent } from './views/contato-page/contato-page.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SobrePageComponent } from './views/sobre-page/sobre-page.component';
     FooterComponent,
     PageDetalhesComponent,
     AreasPageComponent,
-    SobrePageComponent
+    SobrePageComponent,
+    ContatoPageComponent
   ],
   imports: [
     BrowserModule,

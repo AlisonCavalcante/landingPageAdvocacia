@@ -1,0 +1,21 @@
+.container-equipe{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card{
+  margin: 10px auto;
+  border: 2px solid black;
+}
+h4{
+  text-align: center;
+}
+.content-img{
+  text-align: center;
+  width: 100%;
+   margin: 5px;
+}
+img{
+
+  height: 100px;
+  width: 90px;
+}
