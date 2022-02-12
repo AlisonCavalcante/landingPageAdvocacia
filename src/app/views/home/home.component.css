@@ -7,8 +7,12 @@
 .institucional{
   width: 100%;
   height: 100%;
-  border-top: 5px dashed black;
-  border-bottom: 5px dashed black;
+  border-left: 5px dashed black;
+  border-right: 5px dashed black;
+}
+
+.descricao-institucional p{
+  font-size: 20px;
 }
 
 .container-equipe {
@@ -68,4 +72,8 @@ h1 {
 }
 .img-aspas{
   height: 100px;
+}
+
+.container-equipe > .card:hover{
+  transform: scale(1.2);
 }
