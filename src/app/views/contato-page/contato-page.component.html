@@ -3,23 +3,38 @@
     <div class="card" style="margin-top: 5%; margin-bottom: 20%;">
       <h2 style="margin: 30px 50px;">Fale Conosco</h2>
       <h4 style="margin: 0px 50px;">Mande uma mensagem para nós</h4>
-      <form style="margin: 50px;">
+      <form style="margin: 50px;" [formGroup]="formulario" (ngSubmit)="onSubmit()">
         <div class="mb-3" style="width: 70%;">
-          <label for="exampleInputEmail1" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+          <label  class="form-label">Nome</label>
+          <input type="text" class="form-control" formControlName = "nome" aria-describedby="emailHelp" required>
+          <app-campo-control-erro
+          *ngIf="formulario.get('nome')?.errors?.['required'] && formulario.get('nome')?.touched"
+          msgErro="Nome é Obrigatório"
+          >
+          </app-campo-control-erro>
         </div>
         <div class="mb-3" style="width: 50%;" >
           <label for="exampleInputEmail1" class="form-label">Seu e-mail</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <input type="email" class="form-control" formControlName = "email" aria-describedby="emailHelp" required>
+          <app-campo-control-erro
+          *ngIf="formulario.get('email')?.errors?.['required'] && formulario.get('email')?.touched"
+          msgErro="E-mail é Obrigatório"
+          >
+          </app-campo-control-erro>
+          <app-campo-control-erro
+          *ngIf="formulario.get('email')?.errors?.['email'] && formulario.get('email')?.touched"
+          msgErro="E-mail no formato incorreto"
+          >
+          </app-campo-control-erro>
+          <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
         </div>
         <div class="mb-3" style="width: 30%;">
           <label for="exampleInputEmail1" class="form-label">Telefone </label>
-          <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" pattern="\([0-9]{2}\)[0-9]{4,6}-[0-9]{3,4}$" required>
+          <input class="form-control" formControlName = "telefone" aria-describedby="emailHelp" pattern="\([0-9]{2}\)[0-9]{4,6}-[0-9]{3,4}$" required>
         </div>
         <div class="form-group green-border-focus">
           <label for="exampleFormControlTextarea5">Sua mensagem</label>
-          <textarea class="form-control" id="exampleFormControlTextarea5" rows="3"></textarea>
+          <textarea class="form-control" formControlName = "mensagem" rows="3"></textarea>
         </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -27,6 +42,7 @@
            </label>
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="submit" (click)="resetar()" class="btn btn-info">Cancelar</button>
       </form>
     </div>
 

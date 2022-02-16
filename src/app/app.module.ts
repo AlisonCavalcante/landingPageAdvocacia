@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { PageDetalhesComponent } from './views/page-detalhes/page-detalhes.compo
 import { AreasPageComponent } from './views/areas-page/areas-page.component';
 import { SobrePageComponent } from './views/sobre-page/sobre-page.component';
 import { ContatoPageComponent } from './views/contato-page/contato-page.component';
+import { CampoControlErroComponent } from './components/campo-control-erro/campo-control-erro.component';
 
 @NgModule({
   declarations: [
@@ -23,11 +25,13 @@ import { ContatoPageComponent } from './views/contato-page/contato-page.componen
     PageDetalhesComponent,
     AreasPageComponent,
     SobrePageComponent,
-    ContatoPageComponent
+    ContatoPageComponent,
+    CampoControlErroComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     FontAwesomeModule,
     CarouselModule
