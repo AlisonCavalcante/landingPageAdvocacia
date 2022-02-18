@@ -1,7 +1,7 @@
 .container-equipe{
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 10%;
+  margin-bottom: 20%;
 }
 .card{
   margin: 10px auto;
